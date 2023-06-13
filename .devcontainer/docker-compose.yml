@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  local_gpt:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    image: local_gpt
+    container_name: local_gpt_container
+    volumes:
+      - type: bind
+        source: ..
+        target: /workspace
+    tty: true
+    stdin_open: true
