@@ -8,7 +8,7 @@ sentence-transformers
 faiss-cpu
 huggingface_hub
 transformers
-protobuf==3.20.0
+protobuf==3.20.2
 auto-gptq
 
 # Utilities
